@@ -38,6 +38,84 @@ function cuerpo()
         if(isset($cadena2))
             echo $cadena2;
 
+        $real=1234.56789012345678901;
+        $real+=0.4321087654;
+
+        $real=1234.5678901;
+        $real+=0.4321099;
+
+        echo "<br>el numero \$var1 es {$var1}<br>".PHP_EOL;
+        echo 'el numero es $var1<br>'.PHP_EOL;
+
+        $real=null;
+
+        echo "el numero real $real";
+
+        $var=125;
+        $tipo = gettype($var);
+        $var = (string)$var;
+        $tipo = gettype($var);
+        $var = settype($var,"double");
+        $tipo = gettype($var);
+        $var = intval($var);
+
+        $var = "0";
+        if ($var)
+            $cadena="var no vale false";
+
+        $var = "0";
+        if ("0000")
+            $cadena="var no vale false";
+
+        $var = "";
+        if ($var)
+            $cadena="var no vale false";
+
+        $var = 0;
+        if ($var)
+            $cadena="var no vale false";
+
+        $var = 1;
+        if ($var)
+            $cadena="var no vale false";
+
+        //referencia
+        $var1=100;
+        $var2=$var1;
+        $var3=&$var1;
+        $var2=150;
+        $var3=200;
+
+        unset($var3);
+
+        define("NUME",25);
+        $var1+=NUME;
+
+        $var=$var3??$mivar??27;
+
+        $var=0b11111;
+        $var=$var>>1;
+        $var=$var<<1;
+
+        $var=0b1010 & 0b0101;
+        $var=0b1010 | 0b0101;
+
+        $var=7;
+        if($var==1)
+                $cadena="uno";
+            elseif ($var==2)
+                    $cadena="dos";
+                else
+                    $cadena="otro";
+        
+
+        $var=1;
+        switch($var) {
+            case 1: $cadena="uno";
+            case 2: $cadena="dos";
+            default: $cadena="otro";
+        }
+
     ?>
 
 <?php
