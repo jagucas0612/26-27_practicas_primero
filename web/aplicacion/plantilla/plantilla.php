@@ -66,7 +66,7 @@ function inicioCuerpo($cabecera)
             <div id="barraMenu">
                 <ul>
                     <li><a href="/index.php">Inicio</a></li>
-                 </ul> 
+                </ul> 
                 
             </div>
             
