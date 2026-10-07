@@ -4,11 +4,26 @@ include_once(dirname(__FILE__) . "/cabecera.php");
 
 $usuario=getenv("MYSQL_USER");
 
+$barra=[
+    [
+        "TEXTO"=>"inicio",
+        "ENLACE"=>"/index.php",
+        "ADICIONAL"=>">>",
+    ],
+    [
+        "TEXTO"=>"otro"
+    ],
+    [
+        "TEXTO"=>"index",
+        "ADICIONAL"=>"&copy;&copy;"
+    ]
+];
+
 //dibuja la plantilla de la vista
 inicioCabecera("APLICACION PRIMER TRIMESTRE");
 cabecera();
 finCabecera();
-inicioCuerpo("2DAW APLICACION");
+inicioCuerpo("2DAW APLICACION INDEX", $barra);
 cuerpo();  //llamo a la vista
 finCuerpo();
 // **********************************************************
