@@ -17,6 +17,7 @@ function cuerpo()
 {
 ?>
     
+    echo;
 
 <?php
 }
