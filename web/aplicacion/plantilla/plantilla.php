@@ -2,17 +2,17 @@
 
 function paginaError($mensaje)
 {
-  header("HTTP/1.0 404 $mensaje");
-  inicioCabecera("PRACTICA");
-  finCabecera();
-  inicioCuerpo("ERROR");
-  echo "<br />\n";
-  echo $mensaje;
-  echo "<br />\n";
-  echo "<br />\n";  echo "<br />\n";
-  echo "<a href='/index.php'>Ir a la pagina principal</a>\n";
-  
-  finCuerpo();  
+    header("HTTP/1.0 404 $mensaje");
+    inicioCabecera("PRACTICA");
+    finCabecera();
+    inicioCuerpo("ERROR");
+    echo "<br />\n";
+    echo $mensaje;
+    echo "<br />\n";
+    echo "<br />\n";  echo "<br />\n";
+    echo "<a href='/index.php'>Ir a la pagina principal</a>\n";
+    
+    finCuerpo();  
 }
 
 function inicioCabecera($titulo)
