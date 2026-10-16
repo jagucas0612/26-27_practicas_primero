@@ -7,17 +7,23 @@ const NUME1=56;
 //controlador
 
 $barra=[
-     [
-       "TEXTO"=> "inicio",
-       "ENLACE" =>"/index.php",
-     ],
-       [ 
-       "TEXTO"=> "pruebas",   
-       "ENLACE" =>"/aplicacion/pruebas/index.php",
-     ], 
-       [ 
-       "TEXTO"=> "eje. basicos",   
-     ] 
+    [
+        "TEXTO"=> "Inicio",
+        "ENLACE" =>"/index.php",
+    ],
+    [
+        "TEXTO"=>">"
+    ],
+    [ 
+        "TEXTO"=> "Pruebas",   
+        "ENLACE" =>"/aplicacion/pruebas/index.php",
+    ],
+    [
+        "TEXTO"=>">"
+    ],
+    [ 
+        "TEXTO"=> "Ej. Basicos",   
+    ] 
 ];
 
 

@@ -1,14 +1,23 @@
 @charset "UTF8";
 
+h1 {
+    margin-top: 10px;
+}
+h2 {
+    margin-bottom: 0px;
+}
 body {
-    background-color: cyan;
+    background-color: #4B7F52;
     font-size: 16px;
 }
-
 #documento{
+    padding: 15px;
+    border-radius: 10px;
     margin: 0 auto;
-    background-color: #8080ff;
-    width: 700px;
+    background-color: #7DD181;
+    border: solid 3px black;
+    max-width: 700px;
+    width: 100%;
 }
 #cabecera{
     background-color: #14e737;
@@ -25,8 +34,11 @@ body {
 }
 
 #barraUbicacion {
-    background-color: #14e737;
+    border-radius: 15px;
+    padding: 8px;
+    background-color: #B6F9C9;
     color: black;
+    margin-bottom: 10px;
 }
 
 .boton{

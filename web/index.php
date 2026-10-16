@@ -6,16 +6,11 @@ $usuario=getenv("MYSQL_USER");
 
 $barra=[
     [
-        "TEXTO"=>"inicio",
+        "TEXTO"=>"Inicio",
         "ENLACE"=>"/index.php",
-        "ADICIONAL"=>">>",
     ],
     [
-        "TEXTO"=>"otro"
-    ],
-    [
-        "TEXTO"=>"index",
-        "ADICIONAL"=>"&copy;&copy;"
+        "TEXTO"=>">"
     ]
 ];
 
@@ -36,7 +31,7 @@ function cabecera()
 function cuerpo()
 {
 ?>
-    <br><br>
+    <br>
     <a href="./aplicacion/pruebas/index.php">Acceso a pruebas</a><br><br>
     <a href="./aplicacion/relacion1/index.php">Relacion 1</a>
 <?php

@@ -8,10 +8,11 @@ $barra=[
         "ENLACE"=>"/index.php",
     ],
     [
-        "TEXTO"=>">>"
+        "TEXTO"=>">"
     ],
     [
-        "TEXTO"=>"Pruebas"
+        "TEXTO"=>"Pruebas",
+        "ENLACE"=>"/aplicacion/pruebas/index.php"
     ]
 ];
 
@@ -30,11 +31,11 @@ function cabecera()
 function cuerpo()
 {
 ?>
-    <br><br>
+    <br>
     Elemento de pruebas
     <br><br>
     <a href="./basicas.php">Funcionamiento básico</a>
     <a href="./pasopar.php">Comunicación Controlador-Vista</a>
-    <a href="./cadenas.php">Arrays</a>
+    <a href="./array.php">Arrays</a>
 <?php
 }

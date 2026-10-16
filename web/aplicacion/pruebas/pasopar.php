@@ -2,6 +2,26 @@
 include_once(dirname(__FILE__) . "/../../cabecera.php");
 //controlador
 
+$barra=[
+    [
+        "TEXTO"=> "Inicio",
+        "ENLACE" =>"/index.php",
+    ],
+    [
+        "TEXTO"=>">"
+    ],
+    [ 
+        "TEXTO"=> "Pruebas",   
+        "ENLACE" =>"/aplicacion/pruebas/index.php",
+    ],
+    [
+        "TEXTO"=>">"
+    ],
+    [ 
+        "TEXTO"=> "Comunicación Controlador-Vista",   
+    ] 
+];
+
 //datos basicos
 $nombre="Juan Javier";
 $edad=18;
@@ -15,12 +35,11 @@ $basicos=[
 $otras=rellenarOtras();
 
 
-
 //dibuja la plantilla de la vista
 inicioCabecera("Mi aplicacion");
 cabecera();
 finCabecera();
-inicioCuerpo("PASO PARAMETROs");
+inicioCuerpo("PASO PARAMETROs", $barra);
 cuerpo($basicos, $otras);  //llamo a la vista
 finCuerpo();
 // **********************************************************
