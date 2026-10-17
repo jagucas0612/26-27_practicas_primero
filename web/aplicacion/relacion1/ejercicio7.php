@@ -36,6 +36,11 @@ function cabecera()
 //vista
 function cuerpo()
 {
+
+    echo "Fecha actual (d/m/Y): " . date('d/m/Y') . "<br>";
+    echo "Fecha actual: " . date('d, m, Y, D') . "<br>";
+    echo "Hora actual: " . date('H:i:s' );
+
 ?>
     
 
