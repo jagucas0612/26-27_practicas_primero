@@ -32,13 +32,19 @@ function cuerpo()
 {
 ?>
     <h2>Relación de Ejercicios 3</h2>
-    <br>
-    <a href="./ejercicio1.php">Ejercicio 1</a><br><br>
-    <a href="./ejercicio2.php">Ejercicio 2</a><br><br>
-    <a href="./ejercicio3.php">Ejercicio 3</a><br><br>
-    <a href="./ejercicio4.php">Ejercicio 4</a><br><br>
-    <a href="./ejercicio5.php">Ejercicio 5</a><br><br>
-    <a href="./ejercicio6.php">Ejercicio 6</a><br><br>
-    <a href="./ejercicio7.php">Ejercicio 7</a><br><br>
+    <br><br>
+    <h3>Función 1</h3>
+
+    <h3>Función 2</h3>
+    
+    <h3>Función 3</h3>
+
+    <h3>Función 4</h3>
+
+    <h3>Función 5</h3>
+
+    <h3>Función 6</h3>
+
+    <h3>Función 7</h3>
 <?php
 }
