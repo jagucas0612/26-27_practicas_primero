@@ -1,0 +1,103 @@
+<?php
+
+class Persona
+{
+    private string $_nombre;
+
+    private string $_fecha_nacimiento;
+
+    private string $_domicilio;
+
+    private string $_localidad;
+
+    private EstadoCivil $_estado;
+
+    private function __construct()
+    {
+        $this->_nombre = "prueba";
+        $this->_fecha_nacimiento = "01/01/2000";
+        $this->_domicilio = "carrera 12";
+        $this->_localidad = "antequera";
+        $this->_estado = EstadoCivil::SOLTERO;
+    }
+
+    public static function registrarPersona(
+        string $nombre,
+        string $fecha_nacimiento,
+        string $domicilio,
+        string $localidad,
+        EstadoCivil $estado
+    ): Persona {
+
+        $persona = new Persona();
+
+        $persona->_nombre = $nombre;
+        $persona->_fecha_nacimiento = $fecha_nacimiento;
+        $persona->_domicilio = $domicilio;
+        $persona->_localidad = $localidad;
+        $persona->_estado = $estado;
+
+        return $persona;
+    }
+
+    public function getNombre(): string
+    {
+        return $this->_nombre;
+    }
+
+    public function setNombre(string $nombre): void
+    {
+        $this->_nombre = $nombre;
+    }
+
+    public function getFechaNacimiento(): string
+    {
+        return $this->_fecha_nacimiento;
+    }
+
+    public function setFechaNacimiento(string $fecha): void
+    {
+        $this->_fecha_nacimiento = $fecha;
+    }
+
+    public function getDomicilio(): string
+    {
+        return $this->_domicilio;
+    }
+
+    public function setDomicilio(string $domicilio): void
+    {
+        $this->_domicilio = $domicilio;
+    }
+
+    public function getLocalidad(): string
+    {
+        return $this->_localidad;
+    }
+
+    public function setLocalidad(string $localidad): void
+    {
+        $this->_localidad = $localidad;
+    }
+
+    public function getEstado(): EstadoCivil
+    {
+        return $this->_estado;
+    }
+
+    public function setEstado(EstadoCivil $estado): void
+    {
+        $this->_estado = $estado;
+    }
+
+    public function toString(): string
+    {
+        return $this->_nombre
+            . " es una persona "
+            . $this->_estado->descripcion()
+            . " nacida en "
+            . $this->_fecha_nacimiento
+            . " y que vive en "
+            . $this->_localidad;
+    }
+}
