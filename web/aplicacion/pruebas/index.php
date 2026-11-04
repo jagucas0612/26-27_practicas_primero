@@ -40,5 +40,6 @@ function cuerpo()
     <a href="./cadenas.php">Cadenas</a>
     <a href="./expresiones_regulares.php">Expresiones regulares</a>
     <a href="./index_funciones.php">Funciones</a>
+    <a href="./pagformulario.php">Formulario</a>
 <?php
 }
