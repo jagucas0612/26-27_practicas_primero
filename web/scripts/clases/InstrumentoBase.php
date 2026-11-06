@@ -37,9 +37,9 @@ abstract class InstrumentoBase
         return $this->_edad;
     }
 
-    public function sonido(): string;
+    abstract public function sonido(): string;
 
-    public function afinar(): string;
+    abstract public function afinar(): string;
 
     public function envejecer(): void
     {
